@@ -4,20 +4,51 @@ body {
 }
 .logo {
     display:inline-block;
-    width: 120px;
+    width: 9%;
     height: auto;
-    margin: 20px;
+    margin: 1.5%;
 }
-.autor{
-    margin: 20px;
+
+.caja-autor{
     position: absolute;
-    left: 85%;
-    top: 90%;
+    margin: 20px;
+    left: 75%;
+    top: 88%;
+    width: 170px;
+    height: 25px;
+    z-index: 1;
+    /* background-color: white; */
+}
+#autor{
+    position: absolute;
+    display: inline-block;
     font-size: 1.1em;
     font-weight: bold;
     color: #0A3871;
 }
-
+.linkedinimg{
+    display: inline-block;
+    position: absolute;
+    left: 70%;
+}
+.githubimg{
+    display: inline-block;
+    position: absolute;
+    left: 95%;
+}
+.linkedinimg, .githubimg{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #2c69b4;
+    z-index: 2;
+    transform: 300ms;
+    
+}
+.linkedinimg:hover, .githubimg:hover{
+    scale: 1.1;
+}
 .caja{
     position: absolute;
     left: 10%;
@@ -106,12 +137,13 @@ body {
 
 
 .area-resultado {
-    position: absolute;
-    left: 920px;
+    position:absolute;
+    left: 68%;
     top: 40px;
     width: 29%;
     height: 90%;
     /* background-color: #0A3871; */
+    float: right;
 }
 
 #texto-encriptado {     /*resultado*/
@@ -152,6 +184,9 @@ body {
 }
 #muñeco{
     display:inline;
+    /* background-color: white; */
+    width: 80%;
+    height: 70%;
 }
 #texto-anterior{
     font-weight: bold;
@@ -192,6 +227,7 @@ body {
     transition: 300ms;
 }
 #boton-copiar:hover, #boton-borrar:hover, #boton-encriptar:hover, #boton-desencriptar:hover{
+    font-size: 1em;
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -201,6 +237,7 @@ body {
 
 #boton-borrar {
     position: absolute;
+    padding: 5px;
     z-index: 2;
     top: 84%;
     margin: 0px auto 0px 70%;
@@ -219,7 +256,7 @@ body {
 }
 
 
-@media screen and (max-width:1054px){
+@media screen and (max-width:887px){
     .caja{
         position: absolute;
         width: 80%;
@@ -228,6 +265,24 @@ body {
         left: 5%;
         right: 10%;
         margin: 0px 0px 0px 0px;
+    }
+    .caja-autor{
+        top:0%;
+        position: static;
+        float:right;
+    }
+    .linkedinimg{
+        position: relative;
+        display: inline-block;
+    }
+    .githubimg{
+        position: relative;
+        display: inline-block;
+        left: 70%;
+    }
+
+    #autor{
+        font-size: 100%
     }
     .area-resultado{
         position: absolute;
@@ -238,13 +293,20 @@ body {
         height: 70%;
         margin: 0px 0px 0px 0px;
     }
- 
-    .autor{
-        top:0%;
-        position: static;
-        float:right;
+    .caja-imagen{
+        width: 50%;
+        margin: 0 auto;
+        top: 10%;
     }
-}
+    }
+    #boton-copiar, #boton-borrar{
+        scale: .8;
+    }
+    #texto-anterior{
+        scale: .8;
+    }
+
+
 @media screen and (max-width: 480px) {
     .caja{
         height: 50%;
