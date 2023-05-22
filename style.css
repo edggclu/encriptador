@@ -1,5 +1,5 @@
 body {
-    background: #E5E5E5;
+    background: #8b9b8b;
     font-family: 'Open Sans', sans-serif;
 }
 .logo {
@@ -24,7 +24,7 @@ body {
     display: inline-block;
     font-size: 1.1em;
     font-weight: bold;
-    color: #0A3871;
+    color: #d0f5d8;
 }
 .linkedinimg{
     display: inline-block;
@@ -74,7 +74,7 @@ body {
     outline: none;
     overflow-y: auto;
     font-size: 30px;
-    color: blue;
+    color: green;
     padding: 20px 20px 20px 30px;
     background-color: #fcf7f7;
 
@@ -97,7 +97,7 @@ body {
     content: "Ingrese el texto aqui";
     font-size: 30px;
     opacity: 40%;
-    color: blue;
+    color: green;
 }
 #caja-texto {
     display: none;
@@ -115,13 +115,13 @@ body {
     margin: 0 auto;
 }
 #boton-encriptar{
-    background-color: #0A3871;
+    background-color: #0A7121;
     color: #D8DFE8;
 
 }
 #boton-desencriptar {
     background-color: #D8DFE8;
-    color: #0A3871;
+    color: #0A7121;
 }
 #boton-desencriptar, #boton-encriptar { 
     margin: 15px;
